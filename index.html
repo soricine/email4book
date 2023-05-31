@@ -13,19 +13,92 @@
     <!--[if !mso]><!-->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet" />
     <!--<![endif]-->
-	<title style="color:#17bec4;">Build a Bluetooth Low Energy Project</title>
+	<title style="color:#17bec4;">Teach Bluetooth Low Energy</title>
 	<!--[if gte mso 9]>
 	<style type="text/css" media="all">
 		sup { font-size: 100% !important; }
 	</style>
 	<![endif]-->
+	
 
-	<link rel="stylesheet" href="assets/styles/screen.css" media="screen" />
+	<style type="text/css" media="screen">
+		/* Linked Styles */
+		body { background: #EEEEEE; font-family: 'Roboto";';}
+		html { background: #EEEEEE; } 
+		body { padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background:#f2eeee ; background-repeat:no-repeat repeat-y; background-position:0 0 }
+		a { color:#e85853; text-decoration:none }
+		p { padding:0 !important; margin:0 !important } 
+		img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
+		.mcnPreviewText { display: none !important; }
+				
+		/* Mobile styles */
+		@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+			.mobile-shell { width: 100% !important; min-width: 100% !important; }
+
+			.text-header,
+			.m-center { text-align: center !important; }
+			.holder { padding: 0 10px !important; }
+			.ribbon { font-size: 18px !important; }
+			.center { margin: 0 auto !important; }
+			.td { width: 50% !important; min-width: 50% !important; }
+				
+			.text-header .link-white { text-shadow: 0 3px 4px rgba(0,0,0,09) !important; }
+
+			.m-br-15 { height: 15px !important; }
+			.bg { height: auto !important; }
+			.img-title img { width: 30px !important; height: auto !important; }
+
+
+			.m-td,
+			.m-hide { display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important; }
+			.m-block { display: block !important; }
+
+			.p30-15 { padding: 30px 15px !important; }
+			.p15-15 { padding: 15px 15px !important; }
+			.p30-0 { padding: 30px 0px !important; }
+			.p0-0-30 { padding: 0px 0px 30px 0px !important; }
+			.p0-15-30 { padding: 0px 15px 30px 15px !important; }
+			.p0-15 { padding: 0px 15px 0px 15px !important; }
+			.mp0 { padding: 0px !important; }
+			.mp20-0-0 { padding: 20px 0px 0px 0px !important }
+			.mp30 { padding-bottom: 30px !important; }
+			.container { padding: 20px 0px !important; }
+			.outer { padding: 0px !important }
+			.h0 { height: 0px !important; }
+			.brr0 { border-radius: 0px !important; }
+
+			.fluid-img img { width: 50% !important; max-width: 50% !important; height: auto !important; }
+
+			.column,
+			.column-top,
+			.column-dir,
+			.column-empty,
+			.column-empty2,
+			.column-empty3,
+			.column-bottom,
+			.column-dir-top,
+			.column-dir-bottom { float: left !important; width: 100% !important; display: block !important; }
+
+			.column-empty { padding-bottom: 10px !important; }
+			.column-empty2 { padding-bottom: 25px !important; }
+			.column-empty3 { padding-bottom: 45px !important; }
+
+			.content-spacing { width: 15px !important; }
+			.content-spacing2 { width: 25px !important; }
+		}
+		a:link {
+			color: black;
+			text-decoration: none;
+			}
+		a:border{
+			color :#333;
+		}	
+	</style>
 </head>
 <body class="body" style="padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background:#faf6f6 ; background-repeat:no-repeat repeat-y; background-position:0 0;">
-	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: #fcfafa ; background-repeat: no-repeat repeat-y; background-position: 0 0;" align="center"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: #EEEEEE ; background-repeat: no-repeat repeat-y; background-position: 0 0;" align="center"> 
 		<tr>
-			<td background="images/t2_free_bg.jpg" align="center" valign="top" style="background:#ffffff ; background-repeat: no-repeat repeat-y; background-position: 0 0;"> 
+			<td background="images/t2_free_bg.jpg" align="center" valign="top" style="background:#EEEEEE ; background-repeat: no-repeat repeat-y; background-position: 0 0;"> 
 				<table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
 					<tr>
 						<td class="td" style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
@@ -33,7 +106,7 @@
 								<tr>
 									<td>
 										<!-- Header -->
-										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<table width="100%" style ="background:#ffffff;" border="0" cellspacing="0" cellpadding="0">
 											<tr>
 												<td class="p30-15" style="padding: 60px 0px 30px 0px;">
 													<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -45,7 +118,7 @@
 																	</tr> -->
 																</table>
 															</th>
-															<th class="column-empty2" width="1" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;"></th>
+															<th class="column-empty2" width="1" style="font-size:0pt; line-height:0pt; padding:0; margin:0;  font-weight:normal;"></th>
 															<!-- <th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;"> -->
 																<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																	<!-- <tr>
@@ -63,12 +136,12 @@
 										<repeater>
 											<!-- Article / Image + Title + Text -->
 											<layout label='Article / Image + Title + Text'>
-												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<table width="100%" border="0" cellspacing="0" style=background:#ffffff ; cellpadding="0">
 													<tr>
-														<td class="h5 pb30" style="color:#37a8ff; font-size:32px; line-height:54px; text-align:center; padding-bottom:30px;"><multiline><b>Build a Bluetooth Low Energy Project</b></multiline></td>
+														<td class="h5 pb30" style="color:#37a8ff; font-size:39px; font-family: Open Sans Condensed, sans-serif; line-height:54px; text-align:center; padding-bottom:30px;"><multiline><b>Teach Bluetooth Low Energy</b></multiline></td>
 													</tr>
 													<tr>
-														<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:center;"><img src="http://learne.gr/1.jpg" width="95%" height="95%" editable="true" border="1" alt="" /></td>
+														<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:center;"><img src="https://soricine.github.io/1.jpg" width="95%" height="95%" editable="true" border="1" alt="" /></td>
 													</tr>
 													<tr>
 														<td class="h5 pb30" style="color:#37a8ff; font-size:32px; line-height:45px; text-align:center; padding-bottom:30px;"><multiline></multiline></td>
@@ -81,8 +154,8 @@
 																	<!-- <td class="h5 pb30" style="color:#ffd5ab; font-family:'Playfair Display', Georgia, serif; font-size:16px; line-height:24px; text-align:center; padding-bottom:30px;"><multiline>Since 2005</multiline></td> -->
 																</tr>
 																<tr>
-																	<td class="text" style="color:#666; font-size:32px; line-height:30px; text-align:left; ">
-																		<multiline>Dear profesor <br><br>
+																	<td class="text" style="color:#666; font-size:18px; font-style: Medium; line-height:21px; font-weight: 500; text-align:left; ">
+																		<multiline><b>Dear profesor</b> <br><br>
 
 																		Our book, Bluetooth Low Energy, covers theory and implementation step-by-step, and guides students in building a demo BLE project on their smartphone. <br><br>
 																		
@@ -105,15 +178,16 @@
 											<layout label='Article / Image + Title + Text'>
 												<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													
-														<td class="p0-15-30" style="padding: 0px 40px 45px 40px;">
+														<td class="p0-15-30" style="padding: 0px 40px 45px 40px ;background:#ffffff;">
 															<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																
 																<tr>
 																	<!-- <td class="h5 pb30" style="color:#ffd5ab; font-family:'Playfair Display', Georgia, serif; font-size:16px; line-height:24px; text-align:center; padding-bottom:30px;"><multiline>Since 2005</multiline></td> -->
 																</tr>
 																<tr>
-																	<td class="text" style="color:#0060a9; font-size:32px; line-height:43px; text-align:center; ">
-																		<multiline><h2>Select a book from here </h2>
+																	<td class="text" style="color:#333; font-family:Roboto; font-size:18px; line-height:43px; text-align:center; ">
+																		<multiline>
+																			<button type="button" style="background-color: #17bec4; border: 0; width: 255px; height: 52px;"><h2 style="color:#ffffff; font-size: medium;">Browse the Books</h2> </button>
 																	</multiline>
 																	</td>
 																</tr>
@@ -134,10 +208,10 @@
 											<layout label='Three Columns'>
 												<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
-														<td class="p30-15" style="padding: 50px 0px;" align="center">
+														<td class="p30-15" style="padding: 50px 0px; background:#ffffff;" align="center">
 															<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																<tr>
-																	<td align="center" style="padding-bottom: 40px;">
+																	<td align="center" style="padding-bottom: 40px; background:#ffffff;">
 																		<table border="0" cellspacing="0" cellpadding="0">
 																			<!-- <tr>
 																				<td class="img-title" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="images/t2_free_title_l.png" width="70" height="29" border="0" alt="" /></td>
@@ -249,95 +323,27 @@
 																</tr> -->
 																<tr>
 																	<td>
-																		<table width="100%" cellspacing="0" cellpadding="0">
+																		<table width="100%" cellspacing="0" cellpadding="0" style= "background:#ffffff;" >
 																			<tr>
-																				<th class="column-top" width="217" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
-																					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																				<th class="column-top" width="217" style="font-size:0pt; background:#ffffff; line-height:0pt; padding:10pt; margin:0; font-weight:normal; vertical-align:top;">
+																					<table width="90%" border="1" cellspacing="0" cellpadding="0">
 																						<tr>
-																							<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-ios-swift/" target="_blank"><img src="http://learne.gr/4.jpg" width="95%" height="95%" editable="true" border="1" alt="" /></a></td>
-																						</tr>
-																						<tr>
-																							<td class="mp30" style="padding: 0px 10px 10px 10px;">
-																								<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																									<!-- <tr>
-																										<td class="h4 center pb10" style="color:#ffffff; font-family:'Playfair Display', Georgia, serif; font-size:18px; line-height:24px; text-align:center; padding-bottom:10px;"><multiline>Lorem ipsum dolor sit amet</multiline></td>
-																									</tr> -->
-																									<tr>
-																										<td class="price pb15" style="color:#ffffff; font-family:Arial, sans-serif; font-size:22px; line-height:32px; text-align:center; font-weight:bold; padding-bottom:15px;"><multiline>000</multiline></td>
-																									</tr>
-																									<!-- Button -->
-																									<tr>
-																										<td align="center">
-																											<table border="0" cellspacing="0" cellpadding="0">
-																												<!-- <tr>
-																													<td class="text-button" style="border:2px solid #17bec4; color:#17bec4; font-family:'Playfair Display', Georgia, serif; font-size:14px; line-height:18px; text-align:center; font-weight:bold; padding:14px 20px; text-transform:uppercase; border-radius:10px;"><multiline><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-ios-swift/" target="_blank" class="link-white" style="color:#17bec4; text-decoration:none;"><span class="link-white" style="color:#17bec4; text-decoration:none;">ORDER</span></a></multiline></td>
-																												</tr> -->
-																											</table>
-																										</td>
-																									</tr>
-																									<!-- END Button -->
-																								</table>
-																							</td>
+																							<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:center;"><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-ios-swift/" target="_blank"><img src="https://soricine.github.io/4.jpg" width="95%" height="95%"  /></a></td>
 																						</tr>
 																					</table>
 																				</th>
-																				<th class="column-top" width="217" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
-																					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																				<th class="column-top" width="215" style="font-size:0pt; line-height:10pt; padding:10pt; margin:0; font-weight:normal; vertical-align:top; background:#ffffff;">
+																					<table width="90%" cellspacing="0" border="1" cellpadding="0" style="background:#ffffff;">
 																						<tr>
-																							<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-android-java/" target="_blank"><img src="http://learne.gr/3.jpg" width="95%" height="95%" editable="true" border="1" alt="" /></a></td>
+																							<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:center;"><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-android-java/" target="_blank"><img src="https://soricine.github.io/3.jpg" width="95%" height="95%" /></a></td>
 																						</tr>
-																						<tr>
-																							<td class="mp30" style="padding: 0px 10px 10px 10px;">
-																								<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																									<!-- <tr>
-																										<td class="h4 center pb10" style="color:#ffffff; font-family:'Playfair Display', Georgia, serif; font-size:18px; line-height:24px; text-align:center; padding-bottom:10px;"><multiline>Lorem ipsum dolor sit amet</multiline></td>
-																									</tr> -->
-																									<tr>
-																										<!-- <td class="price pb15" style="color:#ffffff; font-family:Arial, sans-serif; font-size:22px; line-height:32px; text-align:center; font-weight:bold; padding-bottom:15px;"><multiline>000</multiline></td>  -->
-																									</tr>
-																									<!-- Button -->
-																									<tr>
-																										<td align="center">
-																											<table border="0" cellspacing="0" cellpadding="0">
-																												<tr>
-																													<!-- <td class="text-button" style="border:2px solid #17bec4; color:#17bec4; font-family:'Playfair Display', Georgia, serif; font-size:14px; line-height:18px; text-align:center; font-weight:bold; padding:14px 20px; text-transform:uppercase; border-radius:10px;"><multiline><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-android-java/" target="_blank" class="link-white" style="color:#17bec4; text-decoration:none;"><span class="link-white" style="color:#17bec4; text-decoration:none;">ORDER</span></a></multiline></td> -->
-																												</tr>
-																											</table>
-																										</td>
-																									</tr>
-																									<!-- END Button -->
-																								</table>
-																							</td>
-																						</tr>
+																						
 																					</table>
 																				</th>
-																				<th class="column-top" width="217" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
-																					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																				<th class="column-top" width="217" style="font-size:0pt; line-height:0pt; padding:10pt; margin:0; font-weight:normal; vertical-align:top;">
+																					<table width="90%" border="1" cellspacing="0" cellpadding="0">
 																						<tr>
-																							<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-c-with-nrf/" target="_blank"><img src="http://learne.gr/2.jpg" width="95%" height="95%" editable="true" border="1" alt="" /></a></td>
-																						</tr>
-																						<tr>
-																							<td class="mp30" style="padding: 0px 10px 10px 10px;">
-																								<table width="100%" border="0" cellspacing="0" cellpadding="0">
-																									<tr>
-																										<!-- <td class="h4 center pb10" style="color:#ffffff; font-family:'Playfair Display', Georgia, serif; font-size:18px; line-height:24px; text-align:center; padding-bottom:10px;"><multiline>Lorem ipsum dolor sit amet</multiline></td> -->
-																									</tr>
-																									<!-- <tr>
-																										 <td class="price pb15" style="color:#ffffff; font-family:Arial, sans-serif; font-size:22px; line-height:32px; text-align:center; font-weight:bold; padding-bottom:15px;"><multiline>000</multiline></td> 
-																									</tr> -->
-																									<!-- Button -->
-																									<tr>
-																										<td align="center">
-																											<table border="0" cellspacing="0" cellpadding="0">
-																												<!-- <tr>
-																													<td class="text-button" style="border:2px solid #17bec4; color:#17bec4; font-family:'Playfair Display', Georgia, serif; font-size:14px; line-height:18px; text-align:center; font-weight:bold; padding:14px 20px; text-transform:uppercase; border-radius:10px;"><multiline><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-c-with-nrf/" target="_blank" class="link-white" style="color:#17bec4; text-decoration:none;"><span class="link-white" style="color:#17bec4; text-decoration:none;">ORDER</span></a></multiline></td>
-																												</tr> -->
-																											</table>
-																										</td>
-																									</tr>
-																									<!-- END Button -->
-																								</table>
-																							</td>
+																							<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:center;"><a href="https://backupbrain.co/titles/bluetooth-low-energy-in-c-with-nrf/" target="_blank"><img src="https://soricine.github.io/2.jpg" width="95%" height="95%"  /></a></td>
 																						</tr>
 																					</table>
 																				</th>
