@@ -25,16 +25,16 @@
 		/* Linked Styles */
 		/* body { background: #EEEEEE; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";} */
 		html { background: #EEEEEE; } 
-		body { padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background:#f2eeee ; background-repeat:no-repeat repeat-y; background-position:0 0 }
+		body { padding:0 !important; margin:0 !important; display:block !important; background:#f2eeee ; background-repeat:no-repeat repeat-y; background-position:0 0 }
 		a { color:#e85853; text-decoration:none }
 		p { padding:0 !important; margin:0 !important } 
 		img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
 		.mcnPreviewText { display: none !important; }
 				
 		/* Mobile styles */
-		@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+		@media only screen and (max-device-width: 360px), only screen and (max-device-width: 720px) {
 			.mobile-shell { width: 100% !important; min-width: 100% !important; }
-
+			
 			.text-header,
 			.m-center { text-align: center !important; }
 			.holder { padding: 0 10px !important; }
@@ -54,12 +54,12 @@
 			.m-hide { display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important; }
 			.m-block { display: block !important; }
 
-			.p30-15 { padding: 30px 15px !important; }
+			/* .p30-15 { padding: 30px 15px !important; } */
 			.h5 {font-size: 56px !important;}
 			.p15-15 { padding: 15px 15px !important; }
 			.p30-0 { padding: 30px 0px !important; }
 			.p0-0-30 { padding: 0px 0px 30px 0px !important; }
-			.p0-15-30 { padding: 0px 15px 30px 15px !important; }
+			.p0-15-30 { padding: 25px 15px 0px 15px !important; }
 			.p0-15 { padding: 0px 15px 0px 15px !important; }
 			.mp0 { padding: 0px !important; }
 			.mp20-0-0 { padding: 20px 0px 0px 0px !important }
@@ -68,11 +68,11 @@
 			.outer { padding: 0px !important }
 			.h0 { height: 0px !important; }
 			.brr0 { border-radius: 0px !important; }
-			.text {font-size:24px !important;line-height:36px!important; padding:50pt!important;}
+			.text {font-size:28px !important;line-height:36px!important; padding:50pt!important;}
 			.fluid-img img { width: 100% !important; max-width: 100% !important; height: auto !important; }
 			.button {width: 456px !important;height: 89px !important;}
 			.column,
-			/* .column-top, */
+			.column-top,
 			.column-dir,
 			.column-empty,
 			.column-empty2,
@@ -91,10 +91,10 @@
 	</style>
 </head>
 <body class="body" style="padding:0 !important; margin:0 !important; display:block !important; -webkit-text-size-adjust:none; background:#faf6f6 ; background-repeat:no-repeat repeat-y; background-position:0 0;">
-	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: #EEEEEE ; background-repeat: no-repeat repeat-y; background-position: 0 0;" align="center"> 
+	<table class = "able" width="100%" border="0" cellspacing="0" cellpadding="0" style="background: #EEEEEE ; background-repeat: no-repeat repeat-y; background-position: 0 0;" align="center"> 
 		<tr>
 			<td background="images/t2_free_bg.jpg" align="center" valign="top" style="background:#EEEEEE ; background-repeat: no-repeat repeat-y; background-position: 0 0;"> 
-				<table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+				<table width="650" border="0" cellspacing="0" cellpadding="0" >
 					<tr>
 						<td class="td" style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -103,7 +103,7 @@
 										<!-- Header -->
 										<table width="100%" style ="background:#ffffff;" border="0" cellspacing="0" cellpadding="0">
 											<tr>
-												<td class="p30-15" style="padding: 60px 0px 30px 0px;">
+												<td class="p30-15" style="padding: 0px 0px 30px 0px;">
 													<table width="100%" border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<th class="column" width="111" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
@@ -142,7 +142,7 @@
 														<td class="h5 pb30" style="color:#37a8ff; font-size:32px; line-height:45px; text-align:center; padding-bottom:30px;"><multiline></multiline></td>
 													</tr>
 													<tr>
-														<td class="p0-15-30" style="padding: 0px 40px 45px 40px;">
+														<td class="p0-15-30" style="padding: 25px 40px 45px 40px;">
 															<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																
 																<tr>
@@ -181,7 +181,7 @@
 																	<!-- <td class="h5 pb30" style="color:#ffd5ab; font-family:'Playfair Display', Georgia, serif; font-size:16px; line-height:24px; text-align:center; padding-bottom:30px;"><multiline>BackupBrain Inc, 340 S Lemon Ave #9953, Walnut CA 91789 USA email: info@backupbrain.co This email was sent to you because your address was given to us. If you no longer wish to receive marketing emails from us, please click here to unsubscribe</multiline></td> -->
 																</tr>
 																<tr>
-																	<td class="text" style="color:#333; font-size:18px; line-height:43px; text-align:center; ">
+																	<td class="text" style="color:#333;padding:25pt; font-size:18px; line-height:43px; text-align:center; ">
 																		<multiline>
 																			<button class="button" type="button" style="background-color: #17bec4; border: 0; width: 255px; height: 52px;"><h2 class="bro" style="color:#ffffff; font-size: medium;">Browse Books</h2> </button>
 																	</multiline>
@@ -204,7 +204,7 @@
 											<layout label='Three Columns'>
 												<table class= "colmob" width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
-														<td class="p30-15" style="padding: 50px 0px; background:#ffffff;" align="center">
+														<td class="p30-15" style="padding: 0px 0px; background:#ffffff;" align="center">
 															<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																
 															
