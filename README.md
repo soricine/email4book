@@ -8,7 +8,7 @@ This is the first email template for a campaign that will have 3 or more emails.
 
 ## Running
 
-This project can be viewed online at [soricine.github.io/email4book](http://soricine.github.io/email4book).
+The main branch of this project can be viewed online at [soricine.github.io/email4book](http://soricine.github.io/email4book).
 
 Or it can be run on your local computer by running a web server in this directory:
 
