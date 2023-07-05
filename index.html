@@ -155,7 +155,7 @@ This technique is called a "blur hash"
       align-items: center;
       flex-shrink: 0;
       ">
-        <div class="padded-block"  >
+      
           <table  style=" color: #0060a9 ;">
             <tr>
             <td>  
@@ -186,34 +186,37 @@ This technique is called a "blur hash"
                 </div>
             </td>
              </tr>
-             </table>
-        
-        </div>
-        <div class="padded-block" >
-          <div class="message-body"
-          style="  margin: 0px 0px;
-        margin-bottom: 15px;
-        line-height: 1.8;
-        display: flex;
-          width: 550px;
-          flex-direction: column;
-          flex-shrink: 0;
-         color: #666;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 30px;
-          "
-          >
-            <p style="  font-family: Roboto, Helvetica, Arial, sans-serif;">
+          <tr>
+          <td>  
+            <div class="message-body"
+             style="  margin: 0px 0px;
+              margin-bottom: 15px;
+              line-height: 1.8;
+              display: flex;
+              width: 550px;
+              flex-direction: column;
+              flex-shrink: 0;
+              color: #666;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 30px;
+              "
+              >
+              
+            <p style="  color: #666; font-family: Roboto, Helvetica, Arial, sans-serif;">
               Dear Dr. {lastName}</p>
-            <p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <p style="  color: #666; font-family: Roboto, Helvetica, Arial, sans-serif;">
               Our book, Bluetooth Low Energy, covers theory and implementation
               step-by-step, and guides students in building a demo BLE project
               on their smartphone. BLE is vital for easy data export between
               smartphones, tablets, and smart devices.
             </p>
-            <p>
+            <p style="  color: #666; font-family: Roboto, Helvetica, Arial, sans-serif;" >
               Students learn not only the Bluetooth LE protocol but also learn
               to build a mobile app from scratch. If you are interested in
               incorporating BLE in your curriculum, our book can be a
@@ -221,25 +224,33 @@ This technique is called a "blur hash"
               happy to provide a complimentary review copy.
             </p>
           </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
           <div style=" padding: 15px 0px 20px 0px; text-align: center;">
             <a class="button" 
-            style="
-            text-decoration: none;
-            background-color: #17bec4;
-            color: #fff;
-            display: inline-block;
-            padding: 15px 60px;
-            cursor: pointer;
-            color: #FFF;
-            text-align: center;
-            font-size: 18px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            font-family: Roboto, Helvetica, Arial, sans-serif;"
+                style="
+                text-decoration: none;
+                background-color: #17bec4;
+                color: #fff;
+                display: inline-block;
+                padding: 15px 60px;
+                cursor: pointer;
+                color: #FFF;
+                text-align: center;
+                font-size: 18px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                font-family: Roboto, Helvetica, Arial, sans-serif;"
             target="_blank" href="#">Browse Books</a>
           </div>
+          </td>
+          </tr>
+          <tr>
+            <td>
           <div class="books"
              style=" 
              padding: 20px 0px 30px 0px;
@@ -316,6 +327,10 @@ This technique is called a "blur hash"
           </div>
         </div>
       </div>
+      </td>
+      </tr>
+      <tr>
+        <td>
       <div class="footer">
         <div class="padded-block" 
         style="color: #888;
@@ -349,6 +364,7 @@ This technique is called a "blur hash"
             <a href="#" target="_blank">click here to unsubscribe</a>.
           </p>
         </div>
+      </table>
       </div>
     </div>
   </body>
